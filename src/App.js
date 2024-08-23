@@ -4,6 +4,7 @@ import HomePage from './pages/HomaPage';
 import AboutPage from './pages/AboutPage';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticlePage from './pages/ArticlePage';
+import NavBar from './NavBar';
 
 
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <h1>My Awesome Blog</h1>
+      <NavBar />
       <div id ="page-body">
         <Routes>
           <Route path="/" element={<HomePage />} />
