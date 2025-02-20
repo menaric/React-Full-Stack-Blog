@@ -6,7 +6,8 @@ import ArticleListPage from './pages/ArticleListPage';
 import ArticlePage from './pages/ArticlePage';
 import NavBar from './NavBar';
 import NotFoundPage from './pages/NotFoundPage';
-
+import LoginPage from './pages/LoginPage';
+import CreateAccountPage from './pages/CreateAcc';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/articles/:articleId" element={<ArticlePage />} />
           <Route path="/articles" element={<ArticleListPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path='/CreateAcc'element={<CreateAccountPage />} />
         </Routes>
 
       </div>
@@ -29,3 +32,4 @@ function App() {
 }
 
 export default App;
+
